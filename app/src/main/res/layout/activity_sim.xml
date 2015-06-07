@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#717171"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".SimActivity">
+
+    <Button
+        android:id="@+id/btnsim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        android:text="Get Info"/>
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:elevation="2dp"
+        >
+        <TextView
+            android:id="@+id/txtsim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sim Number"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/btnsim"
+            android:layout_marginTop="20dp"
+            />
+
+        <Button
+            android:id="@+id/btncopy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="Copy"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtsim"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

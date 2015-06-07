@@ -1,0 +1,15 @@
+gen/
+bin/
+target/
+local.properties
+build/
+test-reports/
+tmp/
+out/
+.idea/
+.gradle/
+/*/.DS_Store
+.DS_Store
+/*/.iml
+*.iml
+captures/*
